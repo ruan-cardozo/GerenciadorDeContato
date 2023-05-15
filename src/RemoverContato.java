@@ -1,6 +1,7 @@
-import java.util.Map;
+import java.util.HashMap;
+
 class RemoverContato {
-	public void removerContato(Map<String, String> contatos, String nome) throws ContatoInexistenteException{
+	public void removerContato(HashMap<String, String> contatos, String nome) throws ContatoInexistenteException{
 		if(contatos.containsKey(nome)){
 			contatos.remove(nome);
 			System.out.println("Contato removido com sucesso!");
