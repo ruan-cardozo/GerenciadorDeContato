@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class ContatoInexistenteException {
+public class ContatoInexistenteException extends Exception{
+	public ContatoInexistenteException(String message) {
+		super(message);
+	}
 }
